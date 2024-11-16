@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio with Project Circle</title>
+    <link rel="stylesheet" href="1.css">
+    
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="main-body">
+
+    <header>
+        <div class="h">
+            <img src="logo6.png" alt="Logo">
+            <h1>Portfolio</h1>
+        </div>
+        <nav>
+            <p class="nav-item"><a href="#Home">Home</a></p>
+            <p class="nav-item"><a href="#about">About</a></p>
+            <p class="nav-item"><a href="#portfolio">Services</a></p>
+            <p class="nav-item"><a href="#blogs">Blog</a></p>
+            <p class="nav-item"><a href="#contact">Contact</a></p>
+            <p><button>Download CV</button></p>
+        </nav>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+    
+    
+    
+    <!--Sections-->
+    <section id="Home" class="c1">
+        <div class="c11">
+            <h1>WELCOME TO MY PROFILE</h1>
+            <p>Hello, I'm Piyush Kumar Gupta</p>
+            <p>Pursuing Bachelor of Technology in <br> CSE-Data Science Specialization from <br> Noida Institute of Engineering and Technology.</p>
+            <button>About Me</button>
+            <hr>
+            <div class="logo">
+                <img src="l_logos.png" alt="LinkedIn Logo">
+                <img src="i_logos.png" alt="Instagram Logo">
+                <img src="f_logos.png" alt="Facebook Logo">
+                <img src="t_logos.png" alt="Twitter Logo">
+            </div>
+        </div>
+        <div id="c12">
+            <img src="mine.jpg" alt="Main Image">
+        </div>
+    </section>
+    
+    
+    <!-- Section 2 -->
+    <section id="about" class="c2">
+        <div class="c22">
+            <div class="work">
+                <img src="work.png" alt="#">
+                <h3>Work Prefer</h3>
+                <p>"I'm a Developer and Designer specializing in <br>Frontend Development, Data Analysis, and <br>Machine Learning."</p>
+            </div>
+            <div class="education">
+                <img src="education.png" alt="#">
+                <h3>Education</h3>
+                <p>"I'm pursuing a B.Tech from <br>Noida Institute of Engineering and Technology <br>with a grade of 8.2, passionate about <br>learning and exploring, <br>and specializing in Data Science."</p>
+            </div>
+            <div class="skill">
+                <img src="skill.png" alt="#">
+                <h3>Skill</h3>
+                <p>"I am proficient in Python, JavaScript, <br>and Java, with experience in Bootstrap, <br>CSS, and Flask, and specialize in <br>Data Science."</p>    
+            </div>
+        </div>
+        <div class="c23">
+            <div id="photos">
+                <img src="mine.jpg" alt="#">
+            </div>
+            <div id="passage">
+                <p>I'm a Designer</p>
+                <h1>I CAN DESIGN Anything YOU Want</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates natus nobis esse non excepturi, sequi autem eligendi qui facilis iusto veniam cumque assumenda vel quisquam deserunt libero earum eaque quia perferendis provident, dolor obcaecati. Nemo quidem aliquid, unde br nihil quis facere, fugiat, esse autem quia nam eveniet totam cumque pariatur!</p>
+                <button>More</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Section 3 -->
+    <section id="portfolio" class="c3">
+        <div class="c31">
+            <h3>Portfolio </h3>
+            <h1>My Amazing Works</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe unde architecto explicabo, corrupti labore <br>enim? Non culpa earum facilis necessitatibus.</p>
+        </div>
+
+        <!-- Integrated Project Circle and Description -->
+        <input type="radio" name="project" id="project1" checked>
+        <input type="radio" name="project" id="project2">
+        <input type="radio" name="project" id="project3">
+        <input type="radio" name="project" id="project4">
+
+        <!-- Circular Container -->
+        <div class="circle-container">
+            <label for="project1" class="segment project1">Project 1</label>
+            <label for="project2" class="segment project2">Project 2</label>
+            <label for="project3" class="segment project3">Project 3</label>
+            <label for="project4" class="segment project4">Project 4</label>
+        </div>
+
+        <!-- Slide Content for Each Project -->
+        <div class="slide-container">
+            <div class="slide-content project1-content">
+                <h2>Pneumonia detection</h2>
+                <p>"Designed and implemented a deep learning model using Python and Flask for pneumonia detection. 
+                    The backend leverages machine learning to classify X-ray images, ensuring accurate diagnostics. 
+                    Developed an interactive and user-friendly front-end for seamless user experience. 
+                    Focused on responsive design, accessibility, and smooth integration with the model. 
+                    Optimized for real-time predictions and deployment in a web environment."</p>
+                <button>Click Here</button>
+            </div>
+            <div class="slide-content project2-content">
+                <h2>NetFlix Clone</h2>
+                <p>"Building a fully responsive Netflix clone using HTML and CSS, 
+                    designed to adapt seamlessly across devices. Features an intuitive interface and dynamic layouts for a smooth user experience."</p>
+                    <button>Click Here</button>
+            </div>
+            <div class="slide-content project3-content">
+                <h2>Weather Web_App Detection</h2>
+                <p>"Developed a dynamic Weather Web App utilizing a weather API to deliver real-time, location-specific forecasts. Integrated user-friendly features for location input and accurate weather data display. Enhanced user experience with reliable data retrieval and seamless error handling."</p>
+                <button>Click Here</button>
+            </div>
+            <div class="slide-content project4-content">
+                <h2>To-do-list</h2>
+                <p>"This project showcases advanced GUI techniques, including custom widgets, dynamic theming, and intuitive user interactions. By leveraging Tkinter’s capabilities, I created a sleek, responsive interface that enhances task management and user experience. Check out how this app combines functionality with modern design to boost productivity."</p>
+                <button>Click Here</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Section 4 -->
+    <section id="blogs" class="c4">
+        <div class="c41">
+            <h1>Skill</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, illum.</p>
+        </div>
+        
+        <div class="main4">
+            <div class="c421">
+                <img src="mine.jpg" alt="#">
+                <img src="mine.jpg" alt="#">
+                <img src="mine.jpg" alt="#">
+                <img src="mine.jpg" alt="#">
+                <img src="mine.jpg" alt="#">
+                <img src="mine.jpg" alt="#">
+                <img src="mine.jpg" alt="#">
+                <img src="mine.jpg" alt="#">
+                <img src="mine.jpg" alt="#">
+                <img src="mine.jpg" alt="#">
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Section 5 -->
+    <section id="experience-achievement" class="c5">
+        <div class="grids-all">
+            <h1>Experience</h1>
+            <hr>
+            <div class="grid">
+                <img src="exper.png" alt="Experience Icon">
+                <p>Lorem ipsum dolor sit?</p>
+                <p>Date</p>
+            </div>
+            <div class="grid">
+                <img src="exper.png" alt="Experience Icon">
+                <p>Lorem ipsum dolor sit ameckj</p>
+                <p>Date</p>
+            </div>
+            <div class="grid">
+                <img src="exper.png" alt="Experience Icon">
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Date</p>
+            </div>
+        </div>
+        <div class="achiv-all">
+            <h1>Achievement</h1>
+            <hr>
+            <div class="grid">
+                <img src="achiv.png" alt="Achievement Icon">
+                <p>Lorem ipsum dolor sit?</p>
+                <p>Date</p>
+            </div>
+            <div class="grid">
+                <img src="achiv.png" alt="Achievement Icon">
+                <p>Lorem ipsum dolor sit ameckj</p>
+                <p>Date</p>
+            </div>
+            <div class="grid">
+                <img src="achiv.png" alt="Achievement Icon">
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Date</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Section 6-->
+    <section id="contact" class="c6">
+        <h1 id="head">Feel Free To Contact</h1>
+        <div class="sec-main">
+            <div class="sec6">
+                <h1>Location</h1>
+                <img src="location2.png" alt="#"><br>
+                <a href="https://www.google.com/maps/place/A+B+HOSTEL+Vidya+Viha/@28.469054,77.4959519,15z/data=!4m2!3m1!1s0x0:0x6b9f33929e3e3305?sa=X&ved=1t:2428&ictx=111"><img src="AB.png" alt="#"></a>
+            </div>
+            <div class="sec6">
+                <h1>Phone</h1>
+                <img src="phone.jpeg" alt="#"><br>
+                <a href="#"><p>+91 6387120398</p></a>
+            </div>
+            <div class="sec6">
+                <h1>Email</h1>
+                <img src="email.jpeg" alt="#"><br>
+                <a href="#"><p>pg120398@gmail.com</p></a>
+            </div>
+            <div class="sec6">
+                <h1>Contact</h1>
+                <div class="logo">
+                    <img src="l_logos.png" alt="LinkedIn Logo">
+                    <img src="i_logos.png" alt="Instagram Logo">
+                    <img src="f_logos.png" alt="Facebook Logo">
+                    <img src="t_logos.png" alt="Twitter Logo">
+                    <br>
+                    <h3>Social Handle</h3>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="form">
+            <h2>Any Queries -</h2>
+            <form id="emailForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea><br>
+                
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="response"></p> <!-- For response message -->
+        </div>
+    </section>
+    
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="foot">
+            <p>Portfolio</p>
+            <img src="logo6.png" alt="Footer Logo">
+        </div>
+    </footer>
+
+    
+</div>
+</body>
+</html>
